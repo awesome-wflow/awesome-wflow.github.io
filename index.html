@@ -32,104 +32,51 @@
                 <center>
                     <h1>Dressing in the Wild by Watching Dance Videos</h1>
                 </center>
+                <p></p>
                 <center>
                     <h3>CVPR2022</h3>
                 </center>
+                <p></p>
                 <center>
-                    <h3>ByteDance     Shenzhen Campus of Sun Yat-Sen University</h3> 
+                    <h3>ByteDance,Shenzhen Campus of Sun Yat-Sen University</h3> 
                 </center>
-
+                <p></p>
                 <center>
-                    <img src="/img/dataset/iPER/dataset_intro_1080p.jpg" width="1000">
+                    <img src="/img/wflow_tearse.pdf" width="1000">
+                </center>
+                <p></p>
+                <center>
+                    <a href="" target="_blank" style="color: #990000">[Paper]</a>
+                    <a href="" target="_blank" style="color: #990000">[Dataset]</a>
                 </center>
                 <p></p>
 
 
                 <p>
-                    <h2>Introduction</h2>
+                    <center>
+                        <h2>Abstract</h2>
+                    </center>
 
                     <div style="font-size:14px">
-                        <p>To evaluate the performances of our proposed method of motion imitation, appearance transfer
-                            and novel view synthesis, we build a new dataset with diverse styles of clothes, named as
-                            Impersonator (iPER) dataset. There are 30 subjects of different conditions of shape, height
-                            and gender. Each subject wears different clothes and performs an A-pose video and a video
-                            with random actions. Some subjects might wear multiple clothes, and there are 103 clothes in
-                            total. The whole dataset contains 206 video sequences with 241,564 frames. We split it into
-                            training/testing set at the ratio of 8:2 according to the different clothes.
+                        <p>While significant progress has been made in garment transfer, one of the most applicable directions of human-centric 
+                           image generation, existing works overlook the in-the-wild imagery, presenting severe garment-person misalignment 
+                           as well as noticeable degradation in fine texture details. This paper, therefore, attends to virtual try-on in 
+                           real-world scenes and brings essential improvements in authenticity and naturalness especially for loose garment 
+                           (e.g., skirts, formal dresses), challenging poses (e.g., cross arms, bent legs), and cluttered backgrounds. 
+                           Specifically, we find that the pixel flow excels at handling loose garments whereas the vertex flow is preferred 
+                           for hard poses, and by combining their advantages we propose a novel generative network called wFlow that can effectively 
+                           push up garment transfer to in-the-wild context. Moreover, former approaches require paired images for training. 
+                           Instead, we cut down the laboriousness by working on a newly constructed large-scale video dataset named Dance50k with 
+                           self-supervised cross-frame training and an online cycle optimization. The proposed Dance50k can boost real-world 
+                           virtual dressing by covering a wide variety of garments under dancing poses. Extensive experiments demonstrate the 
+                           superiority of our wFlow in generating realistic garment transfer results for in-the-wild images without resorting 
+                           to expensive paired datasets.
                         </p>
                     </div>
-
-
+                    
                     <center>
-                        <img src="/img/dataset/iPER/number.png" width="800">
+                        <h2>Citation</h2>
                     </center>
-
-                    <p>
-                        Details of Impersonator (iPER) dataset as shown in above. (a) shows the class of actions and
-                        their number of
-                        occurrences. (b) shows the styles of clothes. (c) and (d) are the distributions of weight and
-                        height of all actors. There are 30 actors in total.
-                    </p>
-
-                    <h2>Action Demo (A pose)</h2>
-                    <center>
-                        <iframe width="800" height="600" src="https://www.youtube.com/embed/904fdkZdaps" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </center>
-                    <h2>Action Demo (Random pose)</h2>
-                    <center>
-                        <iframe width="800" height="600" src="https://www.youtube.com/embed/NSFSo7fHw80" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </center>
-
-                    <h2>Dataset Format</h2>
-                    There are 206 videos in total, all of those have same style, as "xxx_yyy_zzz.mp4", where:
-                    <li>xxx: actor name</li>
-                    <li>yyy: appearance id, different id means different clothes</li>
-                    <li>zzz: action type, 1 represents A pose, 2 represents random pose</li>
-
-                    <h2>Evaluation Metric</h2>
-                    <p>
-                        We propose an evaluation protocol of testing set of iPER dataset and it is able to indicate the
-                        performance of different methods in terms of different aspects. The details are listed in
-                        followings:
-                    </p>
-
-                    <p>(1) In each video, we select three images as source images (frontal, sideway and
-                        occlusive) with different degrees of occlusion. The frontal image contains the most information,
-                        while the sideway will drop out some information, and occlusive image will introduce ambiguity.
-                    </p>
-
-                    <p>
-                        (2) For each source image, we perform self-imitation that actors imitate actions from
-                        themselves.
-                        SSIM and Learned Perceptual Similarity (LPIPS) are the evaluation metrics in
-                        self-imitation setting.
-                    </p>
-
-                    <p>
-                        (3) Besides, we also conduct cross-imitation that actors imitate actions
-                        from others. We use Inception Score (IS) and Fr´echet Distance on a pre-trained person-reid
-                        model, named as FReID, to evaluate the quality of generated images.
-                    </p>
-
-                    <h2>Agreement</h2>
-                    <p>
-                        1. The iPER dataset is available for non-commercial research purposes only. The members of the SVIP Lab recruited subjects and recorded the videos in a controlled setting, and all subjects signed the protocol to permit recordings of them to be made public and used for research purposes.
-                    </p>
-                    <p>
-                        2. You agree not to reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.
-                    </p>
-                    <p>
-                        3. You agree not to further copy, publish or distribute any portion of the iPER dataset. Except, for internal use at a single site within the same organization it is allowed to make copies of the dataset.
-                    </p>
-                    <p>
-                        4. The SVIP Lab reserves the right to terminate your access to the iPER dataset at any time.
-                    </p>
-
-                    <h2>Citation</h2>
                     If you find this useful, please cite our work as follows:
 
                     <pre>
