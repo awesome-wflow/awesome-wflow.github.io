@@ -1,138 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="Dressing in the Wild by Watching Dance Videos.">
+    <meta name="keywords" content="Virtual Try-on">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-
     <title>Dressing in the Wild by Watching Dance Videos</title>
-    <meta name="description" content="">
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet'
-        type='text/css'>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/small_logo.png">
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 
-<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    <div class="navigation"></div>
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Dressing in the Wild by Watching Dance Videos</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- <span class="author-block">
+                            <a href="">Xin Dong</a><sup>1</sup>,</span> -->
+                            <span class="author-block">Xin Dong<sup>1</sup>,</span>
+                            <span class="author-block">Fuwei Zhao<sup>1,2</sup>,</span>
+                            <span class="author-block">Zhenyu Xie<sup>1,2</sup>,</span>
+                            <span class="author-block">Xijin Zhang<sup>1</sup>,</span>
+                            <span class="author-block">Kang Du<sup>1</sup>,</span>
+                            <span class="author-block">Min Zheng<sup>1</sup>,</span>
+                            <span class="author-block">Xiang Long<sup>1</sup>,</span>
+                            <span class="author-block">Xiaodan Liang<sup>2*</sup>,</span>
+                            <span class="author-block">Jianchao Yang<sup>1</sup></span>
+                        </div>
 
-    <div class="news top-container">
-        <div class="container-fluid">
-            <div id="primarycontent">
-                <center>
-                    <h1>Dressing in the Wild by Watching Dance Videos</h1>
-                </center>
-                <p></p>
-                <center>
-                    <h3>CVPR2022</h3>
-                </center>
-                <p></p>
-                <center>
-                    <h3>ByteDance,Shenzhen Campus of Sun Yat-Sen University</h3> 
-                </center>
-                <p></p>
-                <center>
-                    <img src="/img/wflow_tearse.png" width="1000">
-                </center>
-                <p></p>
-                <center>
-                    <a href="" target="_blank" style="color: #990000">[Paper]</a>
-                    <a href="" target="_blank" style="color: #990000">[Dataset]</a>
-                </center>
-                <p></p>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>ByteDance,</span>
+                            <span class="author-block"><sup>2</sup>Shenzhen Campus of Sun Yat-Sen University</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>Supplemental</span>
+                                    </a>
+                                </span>
+                                <!-- Demo Link. -->
+                                <span class="link-block">
+                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Demo (Coming soon ...)</span>
+                                    </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <span class="link-block">
+                                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="far fa-images"></i>
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="hero teaser">
+                <div class="container is-max-desktop">
+                    <div class="hero-body">
+                        <img src="./static/images/teaser.png" width="900">
+                    </div>
+                    <hr>
+                </div>
+            </section>
+        </div>
+    </section>
 
 
-                <p>
-                    <center>
-                        <h2>Abstract</h2>
-                    </center>
 
-                    <div style="font-size:14px">
-                        <p>While significant progress has been made in garment transfer, one of the most applicable directions of human-centric 
-                           image generation, existing works overlook the in-the-wild imagery, presenting severe garment-person misalignment 
-                           as well as noticeable degradation in fine texture details. This paper, therefore, attends to virtual try-on in 
-                           real-world scenes and brings essential improvements in authenticity and naturalness especially for loose garment 
-                           (e.g., skirts, formal dresses), challenging poses (e.g., cross arms, bent legs), and cluttered backgrounds. 
-                           Specifically, we find that the pixel flow excels at handling loose garments whereas the vertex flow is preferred 
-                           for hard poses, and by combining their advantages we propose a novel generative network called wFlow that can effectively 
-                           push up garment transfer to in-the-wild context. Moreover, former approaches require paired images for training. 
-                           Instead, we cut down the laboriousness by working on a newly constructed large-scale video dataset named Dance50k with 
-                           self-supervised cross-frame training and an online cycle optimization. The proposed Dance50k can boost real-world 
-                           virtual dressing by covering a wide variety of garments under dancing poses. Extensive experiments demonstrate the 
-                           superiority of our wFlow in generating realistic garment transfer results for in-the-wild images without resorting 
-                           to expensive paired datasets.
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            While significant progress has been made in garment transfer, one of the most applicable
+                            directions of human-centric image generation, existing works overlook the in-the-wild
+                            imagery,
+                            presenting severe garment-person misalignment as well as noticeable degradation in fine
+                            texture details.
+                            This paper, therefore, attends to virtual try-on in real-world scenes and brings essential
+                            improvements
+                            in authenticity and naturalness especially for loose garment (e.g., skirts, formal dresses),
+                            challenging
+                            poses (e.g., cross arms, bent legs), and cluttered backgrounds. Specifically, we find that
+                            the pixel flow
+                            excels at handling loose garments whereas the vertex flow is preferred for hard poses, and
+                            by combining
+                            their advantages we propose a novel generative network called <b>wFlow</b> that can
+                            effectively push up
+                            garment transfer to in-the-wild context. Moreover, former approaches require paired images
+                            for training.
+                            Instead, we cut down the laboriousness by working on a newly constructed large-scale video
+                            dataset named
+                            <b>Dance50k</b> with self-supervised cross-frame training and an online cycle optimization.
+                            The proposed
+                            <b>Dance50k</b> can boost real-world virtual dressing by covering a wide variety of garments
+                            under dancing
+                            poses. Extensive experiments demonstrate the superiority of our wFlow in generating
+                            realistic garment transfer
+                            results for in-the-wild images without resorting to expensive paired datasets.
                         </p>
                     </div>
-                
-                    <center>
-                        <h2>Dance5k</h2>
-                    </center>
-                
-                    <center>
-                        <h2>Demo</h2>
-                    </center>
-                
-                    <center>
-                        <h2>Virtual Try-on Results</h2>
-                    </center>
- 
-                    <center>
-                        <h3>Video Try-on Results (Women)</h3>
-                    </center>
-                
-                    <center>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/31m2KT6tH2U" 
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </center>
-                    
-                    <center>
-                        <h3>Video Try-on Results (Men)</h3>
-                    </center>
-                
-                    <center>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sOjAV3PMx9M" 
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </center>
-                
-                    <center>
-                        <h2>Citation</h2>
-                    </center>
-                    If you find this useful, please cite our work as follows:
-
-                    <pre>
-@InProceedings{dong2022wflow,
-    title={Dressing in the Wild by Watching Dance Videos},
-    author={Xin Dong and Fuwei Zhao and Zhenyu Xie and Xijin Zhang and Kang Du and Min Zheng and Xiang Long and Xiaodan Liang and Jianchao Yang1},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2022}
-}</pre>
-                </p>
+                </div>
             </div>
+            <!--/ Abstract. -->
+            <hr>
+        </div>
+    </section>
+
+    <!-- Dance5k Dataset -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="column is-full-width has-text-centered container is-max-desktop">
+                <h2 class="title is-3">Dance5k Dataset</h2>
+                <div>
+                    <img src="./static/images/dataset.png" width="900">
+                </div>
+                <br>
+                <div class="content has-text-justified">
+                    <p>
+                        We learn realistic garment transfer by leveraging a collection of real world dance videos
+                        scraped from public internet. The dataset, named <b>Dance50k</b>, contains 50,000 single-person
+                        dance sequences (about 15s duration) that feature varying poses and numerous garment types. For
+                        each video, we uniformly sample 10 frames and get a combination of `C_{10}^2` candidate
+                        `(I^s,I^t)` pairs to form the training and testing pairs. Besides, a simple assertion is further
+                        applied on the candidates to ensure that the number of joints obtained from <a
+                            href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">Openpose</a> in `I^s` is
+                        more than that in `I^t`. Finally, we get a split of 949626 and 15815 image pairs respectively
+                        for training and testing.
+                    </p>
+                    <p><strong>Download Dance5k Dataset:</strong></p>
+                    <ul>
+                        <li>
+                            <p>The dataset can be downloaded from <a href="">here</a> (xx GB). The dataset resolution
+                                is: (512 x 512)</p>
+                        </li>
+                        <li>
+                            <p>The original dance videos corresponding to each sequence can be downloaded from <a
+                                    href="">here</a> (xx GB).</p>
+                        </li>
+                        <li>
+                            <p>Please concate us if you can not access to the dataset. <span
+                                    style="color: #7a0019;">dongxin.1016@bytedance.com</span></p>
+                        </li>
+                    </ul>
+                    <!-- <p><strong>Dance5k Dataset Directory Structure:</strong></p> -->
+                </div>
+                <br>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!-- Dance5k Dataset -->
+
+    <!-- More results -->
+    <div class="columns is-centered">
+        <div class="column is-full-width has-text-centered container is-max-desktop">
+            <h2 class="title is-3">More Results</h2>
+
+            <h3 class="title is-4">Video Virtual Try-on Results (Women)</h3>
+            <div class="content has-text-centered">
+                <iframe width="840" height="473" src="https://www.youtube.com/embed/31m2KT6tH2U"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+
+
+            <h3 class="title is-4">Video Virtual Try-on Results (Men)</h3>
+            <div class="content has-text-centered">
+                <iframe width="840" height="473" src="https://www.youtube.com/embed/sOjAV3PMx9M"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+
+            <div class="content has-text-centered">
+                <h3 class="title is-4">Image Virtual Try-on Results (Full-body)</h3>
+                <img src="./static/images/try-on_fullbody.png" width="900">
+            </div>
+            <br>
+
+            <div>
+                <h3 class="title is-4">Image Virtual Try-on Results (Upper-body)</h3>
+                <img src="./static/images/try-on_upperbody.png" width="900">
+            </div>
+            <br>
+
+            <div>
+                <h3 class="title is-4">Image Virtual Try-on Results (Lower-body)</h3>
+                <img src="./static/images/try-on_lowerbody.png" width="900">
+            </div>
+            <br>
+
+            <hr>
         </div>
     </div>
+    <!-- More results -->
 
-    <div class="footer"></div>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/all.min.js"></script>
+    <!-- Citation -->
+    <section class="section" id="Citation">
+        <div class="container is-max-desktop content">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Citation</h2>
+                </div>
+            </div>
+            <pre><code>@InProceedings{dong2022wflow,
+    title={Dressing in the Wild by Watching Dance Videos},
+    author={Xin Dong and Fuwei Zhao and Zhenyu Xie and Xijin Zhang and Kang Du and Min Zheng and Xiang Long and Xiaodan
+    Liang and Jianchao Yang1},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2022}
+}</code></pre>
+        </div>
+    </section>
+    <!-- Citation -->
 
-    <script>
-        $(document).ready(function () {
-            $(".footer").load("/common/footer.html");
-            $(".navigation").load("/common/navigation.html");
-        });
-    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- <div class="content has-text-centered">
+                <a class="icon-link" href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div> -->
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            The website template is borrowed from <a
+                                href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+                            Thanks to the original authors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
