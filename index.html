@@ -10,7 +10,13 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+    <!-- <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script> -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -100,7 +106,7 @@
                                         <span class="icon">
                                             <i class="far fa-images"></i>
                                         </span>
-                                        <span>Dataset</span>
+                                        <span>Dataset (Coming soon ...)</span>
                                     </a>
                             </div>
 
@@ -178,26 +184,36 @@
                         We learn realistic garment transfer by leveraging a collection of real world dance videos
                         scraped from public internet. The dataset, named <b>Dance50k</b>, contains 50,000 single-person
                         dance sequences (about 15s duration) that feature varying poses and numerous garment types. For
-                        each video, we uniformly sample 10 frames and get a combination of `C_{10}^2` candidate
-                        `(I^s,I^t)` pairs to form the training and testing pairs. Besides, a simple assertion is further
-                        applied on the candidates to ensure that the number of joints obtained from <a
-                            href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">Openpose</a> in `I^s` is
-                        more than that in `I^t`. Finally, we get a split of 949626 and 15815 image pairs respectively
-                        for training and testing. <math xmlns='http://www.w3.org/1998/Math/MathML'> <msubsup> <mrow> <mi> C </mi> </mrow> <mrow> <mn> 10 </mn> </mrow> <mrow> <mn> 2 </mn> </mrow> </msubsup> </math>
+                        each video, we uniformly sample 10 frames and get a combination of \(C_{10}^2\) candidate
+                        \((I^s,I^t)\) pairs to form the training and testing pairs. Besides, a simple assertion is
+                        further applied on the candidates to ensure that the number of joints obtained from <a
+                            href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">Openpose</a> in \(I^s\) is
+                        more than that in \(I^t\). Finally, we get a split of 949626 and 15815 image pairs respectively.
                     </p>
                     <p><strong>Download Dance5k Dataset:</strong></p>
                     <ul>
                         <li>
-                            <p>The dataset can be downloaded from <a href="">here</a> (xxx GB). The dataset resolution
-                                is: (512 x 512)</p>
+                            <p>The dataset can be downloaded from <a href="" , style="color: gray;">here</a>. The
+                                dataset resolution
+                                is: 512 x 512</p>
                         </li>
                         <li>
                             <p>The original dance videos corresponding to each sequence can be downloaded from <a
-                                    href="">here</a> (xx GB).</p>
+                                    href="" , style="color: gray;">here</a>.</p>
                         </li>
                         <li>
-                            <p>Please concate us if you can not access to the dataset. <span
-                                    style="color: #7a0019;">dongxin.1016@bytedance.com</span></p>
+                            <p>Please concate us if you have any question about dataset or our paper. (<span
+                                    style="color: #7a0019;">dongxin.1016@bytedance.com</span> or <span
+                                    style="color: #7a0019;">xiezhenyu.xiezhy@bytedance.com</span>)
+                            </p>
+                        </li>
+                    </ul>
+                    <p><strong>Notes:</strong></p>
+                    <ul>
+                        <li>
+                            <p>For now, the dataset downloaded links are invalid since anonymizing each frame in such a
+                                large amount of vidoes is laborious and time-consuming. We will release the whole
+                                dataset in late May or early June. :-) </p>
                         </li>
                     </ul>
                     <!-- <p><strong>Dance5k Dataset Directory Structure:</strong></p> -->
